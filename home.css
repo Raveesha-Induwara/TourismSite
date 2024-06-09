@@ -1,0 +1,1016 @@
+/* Name         - Abeysingha R.I.*/
+/* Index Number - 214006T */
+
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+/* Whole Document */
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: sans-serif;
+}
+
+html{
+   scroll-behavior: smooth;
+}
+
+body{
+   font-family: 'Lato', sans-serif;
+   color: #838388;
+   background-color: whitesmoke;
+   z-index: 0;
+}
+
+ol,ul{
+   list-style: none;
+   margin: 0;
+}
+
+p{
+   text-align: justify;
+   font-size: 1em;
+   line-height: 1.6666;
+   margin-bottom: 15px;
+   margin: 0 0 10px;
+   text-align: justify;
+}
+
+h2{
+   font-size: 2.2em;
+   font-family: 'Handlee', cursive;
+   line-height: 1.25em;
+   margin: 0 0 15px;
+   font-weight: normal;
+   color: #2d3e52;
+}
+
+h4{
+   font-size: 1em;
+   line-height: 1.25em;
+   margin: 0 0 15px;
+   font-weight: normal;
+}
+
+h5{
+   font-size: 0.9em;
+   line-height: 1.1428em;
+   margin: 0 0 15px;
+   font-weight: normal;
+   color: #2d3e52;
+}
+
+a{
+   text-decoration: none;
+   color: inherit;
+}
+
+.background{
+   padding-top: 40px;
+   padding-bottom: 70px;
+   background: url(https://www.srilankatravelandtourism.com/images/global-map.jpg) no-repeat;
+   background-position: 50%;
+   overflow: hidden;
+}
+
+/* ----------------------------------------------- Header section --------------------------------------------------- */
+#header{
+   position: relative;
+   background-color: #fff;
+   z-index: 10;
+}
+
+#header .nav-top{
+   width: 100%;
+   height: 30px;
+   background-color: #01b7f2;
+   z-index: 5;
+}
+
+.nav-top > .quick-menu li{
+   display: inline-block;
+}
+
+.nav-top > .quick-menu li>a{
+   font-size: 0.8333em;
+   line-height: 30px;
+   color: #fff;
+   text-decoration: none;
+   text-transform: uppercase;
+}
+
+.nav-top .pull-left{
+   float: left;
+}
+
+.nav-top .pull-left li{
+   margin-left: 40px;
+}
+
+.nav-top .pull-right{
+   float: right;
+}
+
+.nav-top .pull-right li{
+   margin-right: 20px;
+}
+
+/* Navigation Bar */
+.main-header input[type="checkbox"]{
+   display: none;
+}
+
+.main-header>label>i{
+   display: none;
+   width: 50px;
+   height: 30px;
+   float: right;
+   z-index: 100;
+   color: #01b7f2;
+}
+
+.container{
+   display: flex;
+   width: 100%;
+   margin: 0 auto;
+   align-items: center;
+   justify-content: space-around;
+   transition: all 0.4s ease-in;
+}
+
+/* Logo */
+.container .nav-loge a>img{
+   width: 200px;
+}
+
+/* Menu Bar */
+.container #main-menu{
+   float: right;
+   margin-right: 20px;
+}
+
+.container #main-menu ul.menu .menu-item{
+   display: inline-block;
+   margin-left: 40px;
+}
+
+.container #main-menu ul.menu .menu-item>a{
+   display: block;
+   font-weight: normal;
+   height: 68px;
+   line-height: 68px;
+   font-size: 11px;
+   letter-spacing: 0.04em;
+   text-decoration: none;
+   text-transform: uppercase;
+}
+
+.container #main-menu ul.menu .menu-item>a:hover{
+   color: #04afe7;
+}
+
+.container #main-menu ul.menu .sub-menu{
+   position: absolute;
+   width: 200px;
+   top: 100%;
+   display: none;
+   background-color: #14c4ff;
+}
+
+.container #main-menu ul.menu .sub-menu li>a{
+   display: block;
+   font-size: 11px;
+   text-decoration: none;
+   padding: 15px 20px;
+   color: #428bca;
+   border-top: 1px solid #04afe7;
+}
+
+.container #main-menu ul.menu .sub-menu li>a:hover{
+   background-color: #01b7f2;
+   color: #fff;
+   transition: all 0.2s ease-in;
+}
+
+.container #main-menu ul.menu .menu-item:hover .sub-menu{
+   display: block;
+}
+
+/* Main Image */
+.main-img img{
+   width: 100%;
+   height: 80vh;
+}
+
+/* ------------------------------------------------------ Content ------------------------------------------------------ */
+/* ------------- Search Box ------------- */
+.search-box{
+   position: relative;
+   top: -60px;
+   width: 90%;
+   height: 200px;
+   margin: auto;
+   margin-bottom: 80px;
+}
+
+.search-box .search-tabs{
+   width: 80%;
+   margin: auto;
+}
+
+.search-box .search-tabs ul li{
+   float: left;
+   padding-right: 4px;
+}
+
+.search-box .search-tabs ul li a{
+   background-color: #fff;
+   display: block;
+   padding: 0 30px;
+   font-size: 12px;
+   font-weight: lighter;
+   height: 40px;
+   line-height: 40px;
+   text-decoration: none;
+   opacity: 0.5;
+   letter-spacing: 0.04em;
+   text-transform: uppercase;
+}
+
+.search-box .search-tab-content > div {
+   position: absolute;
+}
+
+.search-box .search-tab-content{
+   margin-bottom: -30px;
+   padding: 70px 0;
+}
+
+.search-box .search-tab-content #place-tab {
+   display: block;
+}
+
+.search-tab-content .image-box{
+   display: flex;
+   float: left;
+   margin-bottom: 10px;
+   padding: 0 10px;
+}
+
+.search-tab-content .image-box .box{
+   text-align: left;
+   background: #fff;
+   margin-bottom: 30px;
+}
+
+.search-tab-content .image-box .box .hover-effect{
+   display: block;
+   position: relative;
+   background: none;
+   overflow: hidden;
+}
+
+.image-box .box .details{
+   width: 250px;
+   padding: 12px 10px;
+}
+
+.image-box .box .details .box-title{
+   color: #2d3e52;
+}
+
+.image-box .box figure:hover img{
+   opacity: 0.7;
+}
+
+/* ------------- Global map area without map ------------- */
+
+.global-map-area-without-map{
+   background-position: 0% 363.438px;
+}
+
+.global-map-area-without-map .container{
+   margin: 0 auto;
+}
+
+.container .table-wapper{
+   display: flex;
+   width: 90%;
+   margin: auto;
+}
+
+.container .table-wapper .tabel-cell{
+   padding: 40px 15px 70px 15px;
+}
+
+.tabel-cell>h1, .tabel-cell>h3{
+   font-size: 2em;
+   line-height: 1.25em;
+   margin: 0 0 15px;
+   font-weight: normal;
+   color: #2d3e52;
+}
+
+.tabel-cell h3{
+   font-family: 'Handlee', cursive;
+   font-size: 1.5em;
+   line-height: 1.2222em;
+}
+
+.tabel-cell .review{
+   display: block;
+}
+
+.tabel-cell .review .five-star-container{
+   display: inline-block;
+   position: relative;
+   text-align: left;
+   cursor: default;
+}
+
+.five-star-container>i{
+   font-size: 14px;
+   line-height: 1.2em;
+   color: gold;
+}
+
+.tabel-cell .review label{
+   margin: 0 0 5px 5px;
+   font-weight: bold;
+   color: #9e9e9e;
+   text-transform: uppercase;
+}
+
+.tabel-cell .box-btn{
+   position: relative;
+   display: inline-block;
+   padding: 0 15px;
+}
+
+.tabel-cell .box-btn .box{
+   display: block;
+   margin-bottom: 30px;
+}
+
+.tabel-cell .box-btn .box .button{
+   text-align: center;
+   font-size: 12px;
+   height: 70px;
+   width: 250px;
+   padding: 0;
+   text-transform: uppercase;
+   background: transparent;
+   line-height: 1.5em;
+   border-left: none;
+   position: relative;
+   overflow: hidden;
+   letter-spacing: 0;
+   display: inline-table;
+   margin-right: 10px;
+   margin-bottom: 10px;
+}
+
+.btn-blue{
+   border: 1px solid #01b7f2;
+}
+
+.btn-yellow{
+   border: 1px solid #fdb714;
+}
+
+.btn-purple{
+   border: 1px solid #db8df6;
+}
+
+.btn-green{
+   border: 1px solid #7db921;
+}
+
+.button i{
+   width: 55px;
+   vertical-align: middle;
+   color: #2d3e52;
+   font-size: 36px;
+   display: table-cell;
+   height: 70px;
+   text-align: right;
+   padding-right: 8px;
+   padding-left: 15px;
+}
+
+.btn-blue i{
+   background-color: #01b7f2;
+}
+
+.btn-yellow i{
+   background-color: #fdb714;
+}
+
+.btn-purple i{
+   background-color:#db8df6;
+}
+
+.btn-green i{
+   background-color:#7db921;
+}
+
+.button span{
+   display: table-cell;
+   vertical-align: middle;
+   padding: 0 10px 0 25px;
+   text-align: left;
+   color: #fff;
+}
+
+.button span em{
+   font-size: 16px;
+   font-weight: bold;
+   font-style: normal;
+}
+
+.btn-blue span em{
+   color: #01b7f2;
+}
+.btn-yellow span em{
+   color: #fdb714;
+}
+.btn-purple span em{
+   color: #db8df6;
+}
+.btn-green span em{
+   color: #7db921;
+}
+
+/* Hover effect */
+.box-btn .box .button:hover{
+   background-color: #fff;
+}
+
+.box-btn .box .button:hover i{
+   color: #fff;
+}
+
+.box-btn .box .button:hover span{
+   color: #9e9e9e;
+}
+
+/* Image */
+.table-wapper .image-wapper{
+   padding-top: 50px;
+}
+
+/* ------------- Travel Process ------------- */
+.travel-process-section {
+   margin-bottom: 120px;
+}
+
+.travel-process-section .discription{
+   text-align: center;
+}
+.discription>h2{
+   color: #fff;
+}
+
+.discription .travelo-process{
+   position: relative;
+   display: inline-block;
+}
+
+.discription .travelo-process>img{
+   max-width: 100%;
+   margin-bottom: 2px;
+}
+
+.travelo-process .icon-box{
+   display: inline-block;
+   position: absolute;
+   width: 100%;
+}
+
+.travelo-process .icon-box .details{
+   min-width: 250px;
+   width: 100%;
+   padding-right: 8%;
+   padding-left: 0;
+}
+
+.travelo-process .icon-box .details h4{
+   color: #fff;
+}
+
+.travelo-process .icon-box .details p{
+   color: #7c9abd;
+}
+
+.travelo-process .icon-box #icon{
+   position: absolute;
+   display: table-cell;
+   text-align: center;
+   font-size: 18px;
+}
+
+.travelo-process .icon-box #icon i{
+   display: block;
+   font-size: 25px;
+   color: #fff;
+   background-color: #01b7f2;
+   border: 15px solid #01b7f2;
+   border-radius: 50%;
+}
+/* Set Position to icon box*/
+.travelo-process .first{
+   top: 5%;
+   right: 100%;
+   text-align: right;
+}
+.travelo-process .second{
+   top: 5%;
+   left: 100%;
+   text-align: left;
+}
+.travelo-process .third{
+   top: 75%;
+   left: 100%;
+   text-align: left;
+}
+.travelo-process .fourth{
+   top: 75%;
+   right: 100%;
+   text-align: right;
+}
+
+/* Set Position to icon */
+.travelo-process .first #icon{
+   top: 12%;
+   right: -25%;
+}
+.travelo-process .second #icon{
+   top: 12%;
+   left: -25%;
+}
+.travelo-process .second .details{
+   margin-left: 20px;
+}
+.travelo-process .third #icon{
+   top: -8%;
+   right: 108%;
+}
+.travelo-process .third .details{
+   margin-left: 20px;
+}
+.travelo-process .fourth #icon{
+   top: -8%;
+   left: 108%;
+}
+
+/* -------------------- Container ------------------- */
+.container .row .image-box .box .details .box-title{
+   text-transform: uppercase;
+   font-weight: normal;
+}
+.container .row .image-box .box .details .box-title small{
+   text-transform: capitalize;
+}
+
+
+/* -------------------- Middle Section -------------------- */
+/* Block one */
+.md-section{
+   width: 90%;
+   margin: auto;
+   padding-top: 40px;
+   padding-bottom: 30px;
+}
+.md-section .block{
+   display: flex;
+   margin-bottom: 40px;
+}
+
+.md-section .block .block1, .md-section .block .block2{
+   flex-basis: 50%;
+   margin: 0 20px 0;
+}
+
+.block1 .content-box .panel{
+   background-color: #fff;
+   padding: 15px;
+   border-bottom: 2px solid #f5f5f5;
+}
+
+.block1 .content-box .panel .panel-title{
+   display: block;
+   cursor: pointer;
+}
+
+.block1 .content-box .panel .panel-title i{
+   font-size: 23px;
+   color: #01b7f2;
+   background-color: #fff;
+   padding-right: 10px;
+}
+
+.block1 .content-box .panel .panel-content{
+   display: block;
+   padding-left: 40px;
+}
+
+.block1 .content-box .panel .panel-title:hover{
+   color: #01b7f2;
+}
+
+/* Block Two */
+.block2 .viewport{
+   position: relative;
+   padding: 25px;
+   background-color: #fff;
+   height: 50vh;
+}
+
+.block2 .viewport ul.slides{
+   transition-duration: 0s;
+   transform: translate3d(0px, 0px, 0px);
+}
+
+.block2 .viewport ul.slides li.active-slide{
+   position: absolute;
+   float: left;
+   height: 45vh;
+   display: none;
+}
+
+.block2 .viewport ul.slides li.active-slide p.description{
+   padding-top: 30px;
+   color: #01b7f2;
+   font-style: italic;
+   margin-bottom: 100px;
+}
+
+.block2 .viewport ul.slides li.active-slide .author{
+   position: absolute;
+   bottom: 0;
+   left: 0;
+   right: 0;
+}
+
+.block2 .viewport ul.slides li.active-slide .author a{
+   float: left;
+   width: 74px;
+   height: 74px;
+   margin-right: 10px;
+   border-radius: 50%;
+   overflow: hidden;
+} 
+
+.block2 .viewport ul.slides li.active-slide .author .name{
+   padding-top: 22px;
+}
+
+.block2 .viewport ul.slides li.active-slide .author .name small{
+   text-transform: uppercase;
+   font-size: 0.7em;
+   color: #838388;
+   letter-spacing: 0.1;
+   
+}
+
+.block2 .viewport .control-nav{
+   position: absolute;
+   right: 5%;
+   bottom: 5%;
+   display: inline-block;
+}
+
+.block2 .viewport .control-nav input{
+   cursor: pointer;
+}
+
+
+/* -------------------- Middle Section 2 -------------------- */
+.block .viewport{
+   flex-basis: 50%;
+   padding: 0 15px;
+}
+
+.block .row, .block .icon-box{
+   padding: 30px;
+   line-height: 50px;
+}
+
+.block .row{
+   display: flex;
+   background-color: #fff;
+}
+
+.block .viewport .row i{
+   border-radius: 50%;
+   width: 60px;
+   height: 60px;
+   line-height: 60px;
+   background: #01b7f2;
+   color: #fff;
+   font-size: 1em;
+   text-align: center;
+}
+
+.block .viewport .row .discription{
+   padding-left: 30px;
+   line-height: 1.6em;
+   color: #2d3e52;
+}
+
+.block .viewport .row .discription h4{
+   margin-bottom: 20px;
+   line-height: 1.3333em;
+   text-transform: uppercase;
+   cursor: pointer;
+}
+
+.block .viewport .row .discription ul.circle{
+   margin-bottom: 20px;
+}
+
+.block .viewport .row .discription ul.circle li{
+   list-style: disc;
+   font-size: 0.8em;
+   line-height: 2em;
+   color: #838388;
+}
+
+.block .viewport .row .discription a.view{
+   text-decoration: underline;
+   color: #98ce44;
+   font-size: 0.8em;
+}
+
+.block .viewport .row .discription h4:hover{
+   color: #01b7f2;
+}
+
+/* Thumb Up Icon Box */
+.block .viewport .icon-box{
+   border: 1px solid #fdb714;
+   margin-top: 20px;
+   padding: 45px 20px 20px;
+   position: relative;
+   color: #7c9abd;
+   text-align: center;
+}
+
+.block .viewport .icon-box i{
+   position: absolute;
+   width: 72px;
+   height: 72px;
+   top: -36px;
+   left: 50%;
+   margin-left: -36px;
+   font-size: 2em;
+   color: #fff;
+   background: #fdb714;
+   line-height: 72px;
+   border-radius: 50%;
+   text-align: center;
+}
+
+.block .viewport .icon-box h3{
+   font-family: 'Handlee', cursive;
+   font-weight: lighter;
+   color: #01b7f2;
+   margin-bottom: 15px;
+   margin-top: -25px;
+}
+
+.block .viewport .icon-box a.button{
+   padding: 12px 32px;
+   background-color: #01b7f2;
+   color: #fff;
+   font-size: 0.7em;
+   font-weight: bold;
+   text-transform: uppercase;
+   cursor: pointer;
+}
+
+/* Map */
+.block .overlay-map{
+   padding: 0 15px;
+   flex-basis: 50%;
+}
+
+
+/*  ------------- Explore Image Section ------------- */
+.explore-section{
+   display: block;
+   height: 700px;
+   width: 90%;
+   margin: auto;
+   padding: 40px 15px 70px 15px;
+}
+
+/* ------------------ Icon Section ------------------ */
+.icon-section{
+   float: left;
+   width: 100%;
+}
+
+.icon-section .container{
+   padding: 0 15px;
+   padding-top: 40px;
+}
+
+.icon-section .container .icon-box{
+   padding: 0 15px;
+}
+
+.icon-section .container .icon-box .icon{
+   text-align: center;
+}
+
+.icon-section .container .icon-box .icon a i{
+   font-size: 40px;
+   color: #01b7f2;
+}
+
+.icon-section .container .icon-box .icon a h4{
+   color: #d9d9d9;
+   margin: 10px 0;
+   letter-spacing: 0.04em;
+   line-height: 1em;
+   font-size: 1.0em;
+   font-family: 'Handlee', cursive;
+}
+/* ---------------------------------------------------------------------------------------------------------------- */
+
+
+/* ----------------------------------------------- Footer Section ------------------------------------------------ */
+#footer{
+   background-color: #fff;
+}
+
+#footer .container{
+   background: url(https://www.srilankatravelandtourism.com/images/elephants-srilanka.png) no-repeat right bottom;
+}
+
+#footer .row{
+   background: url(https://www.srilankatravelandtourism.com/images/themes/footer/style05/sky.png) no-repeat center bottom;
+}
+
+#footer .box{
+   bottom: 0;
+   display: flex;
+   width: 90%;
+   margin: auto;
+   padding-bottom: 200px;
+   padding-top: 80px;
+   font-size: medium;
+}
+
+#footer .segment{
+   position: relative;
+   flex-basis: 20%;
+   margin: 0 auto;
+}
+
+#footer .segment h2{
+   margin-bottom: 20px;
+   font-family: 'Handlee', cursive;
+   font-size: 1.5rem;
+   font-weight: lighter;
+   color: darkslategray;
+}
+
+/* Discover Segment */
+#footer .Discover >div{
+   display: inline-flex;
+}
+
+#footer .Discover ul>li{
+   line-height: 2.6667em;
+   font-size: 14px;
+}
+
+#footer .Discover ul>li:hover{
+   color: #01b7f2;
+}
+
+/* Travel Segment */
+#footer ul.travel-new li{
+   margin-bottom: 30px;
+   display: inline-flex;
+}
+
+ul.travel-new li div{
+   float: left;
+}
+
+ul.travel-new li div a{ 
+   text-decoration: none;
+   color: inherit;
+}
+
+ul.travel-new li div.discription{
+   padding-left: 15px;
+}
+
+ul.travel-new li div.discription h5{
+   margin-bottom: 5px;
+   color: #01b7f2;
+}
+
+ul.travel-new li div.discription h5:hover{
+   color: #04afe7;
+}
+
+ul.travel-new li div.discription span{
+   margin-top: 5px;
+   font-size: 12px;
+}
+
+/* Social Media Segment */
+#footer .Social-Media ul.social-icons li{
+   float: left;
+   text-align: center;
+}
+
+.Social-Media ul.social-icons li a{
+   width: 32px;
+   margin-right: 4px;
+   margin-bottom: 4px;
+   height: 32px;
+   display: inline-block;
+   background: #d9d9d9;
+   color: #fff;
+   line-height: 32px;
+   font-size: 12px;
+}
+
+.Social-Media>p{
+   margin-top: 20px;
+}
+
+.Social-Media ul.social-icons li a:hover{
+   background-color: #01b7f2;
+}
+
+
+/* SriLankan-Tourism Segment */
+#footer .SriLankan-Tourism .contact-details{
+   font-style: normal;
+}
+
+.SriLankan-Tourism>p>a:hover{
+   color: #01b7f2;
+}
+
+.contact-details{
+   margin-top: 40px;
+}
+
+.contact-details .contact-phone{
+   color: #2d3e52;
+   font-size: 1.1667em;
+}
+
+.contact-details .contact-phone i{
+   color: #01b7f2;
+}
+
+.contact-details .contact-email{
+   color: #01b7f2;
+   padding: 0 24px;
+   line-height: 2em;
+}
+
+
+#footer> .container div>img{
+   width: 400px;
+   height: 166px;
+   bottom: 0;
+   right: 0;
+}
+
+/* Bootom Gray Area */
+#footer .bottom-gray-area{
+   margin-top: 0;
+   height: 60px;
+   background-color: #f5f5f5;
+}
+
+.bottom-gray-area .container .logo{
+   width: 314px;
+}
+
+.bottom-gray-area .logo a img{
+   margin-bottom: 5px;
+}
+
+.bottom-gray-area .container .pull-left{
+   float: left;
+}
+
+.bottom-gray-area .container .pull-right{
+   float: right;
+}
+
+.bottom-gray-area .container .copyright{
+   font-size: 1.0833em;
+   margin: 23px 20px 0;
+}
